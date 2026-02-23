@@ -5,12 +5,9 @@
   <title>Alice Krupitsky</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="iconAK.png" />
-
-  <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-
   <style>
     :root{
       --bg: #b6e2c6;
@@ -23,7 +20,6 @@
       --radius: 18px;
       --card-bg: rgba(255,255,255,0.85);
     }
-
     html { scroll-behavior: smooth; }
     body::before{
       content:"";
@@ -35,7 +31,7 @@
       linear-gradient(90deg, rgba(26,61,47,.10) 1px, transparent 3px);
       background-size: 15px 15px;
       mix-blend-mode: multiply;
-}
+    }
     body{
       margin:0;
       background: var(--bg);
@@ -46,16 +42,11 @@
     }
     a{ color: var(--ink); text-decoration: underline dotted; font-weight: bold; }
     a:hover{ color: var(--green2); }
-
-  
-    /* Layout */
     .page{ position:relative; z-index:1; max-width:1100px; margin:0 auto; padding: 42px 16px 48px; }
     .grid{ display:grid; grid-template-columns: 240px 1fr; gap: 18px; margin-top: 22px; }
     @media (max-width: 900px){
       .grid{ grid-template-columns: 1fr; }
     }
-
-    /* Header window */
     .headerWindow{
       max-width: 860px;
       margin: 0 auto;
@@ -100,22 +91,19 @@
       border-top: 0;
     }
     .windowBody p{
-  margin: 0 0 14px;
-  line-height: 1.55;
-}
-
-.windowBody ul{
-  line-height: 1.5;
-  margin: 10px 0;
-}
-
-.windowBody li{
-  margin-bottom: 7px;
-}
-
-.windowBody{
-  letter-spacing: .02em;
-}
+      margin: 0 0 14px;
+      line-height: 1.55;
+    }
+    .windowBody ul{
+      line-height: 1.5;
+      margin: 10px 0;
+    }
+    .windowBody li{
+      margin-bottom: 7px;
+    }
+    .windowBody{
+      letter-spacing: .02em;
+    }
     .headerBtns{
       margin-top: 16px;
       display:flex;
@@ -123,8 +111,6 @@
       justify-content:center;
       flex-wrap:wrap;
     }
-
-    /* Nav */
     .navWrap{
       position: sticky;
       top: 16px;
@@ -165,30 +151,20 @@
       font-family:'VT323', monospace;
       background: var(--soft);
       color: var(--green);
-box-shadow: 0 3px 0 var(--green),
-    inset 0 1px 0 rgba(255,255,255,.7);
-    transition: transform .12s ease, background .12s ease, color .12s ease, box-shadow .12s ease;
-}
-
+      box-shadow: 0 3px 0 var(--green), inset 0 1px 0 rgba(255,255,255,.7);
+      transition: transform .12s ease, background .12s ease, color .12s ease, box-shadow .12s ease;
+    }
     .navBtn:hover{ background: var(--bg); }
-
-.navBtn:active{
-  transform: translateY(2px);
-  box-shadow:
-    0 1px 0 var(--green),
-    inset 0 1px 0 rgba(255,255,255,.6);
-}
-
-.navBtn.active{
-  background: var(--green2);
-  color: #fff;
-  border-color: var(--green2);
-  box-shadow:
-    0 3px 0 var(--ink),
-    inset 0 1px 0 rgba(255,255,255,.25);
-}
-
-    /* Windows */
+    .navBtn:active{
+      transform: translateY(2px);
+      box-shadow: 0 1px 0 var(--green), inset 0 1px 0 rgba(255,255,255,.6);
+    }
+    .navBtn.active{
+      background: var(--green2);
+      color: #fff;
+      border-color: var(--green2);
+      box-shadow: 0 3px 0 var(--ink), inset 0 1px 0 rgba(255,255,255,.25);
+    }
     .window{
       background: var(--soft);
       border: 4px solid var(--ink);
@@ -231,46 +207,36 @@ box-shadow: 0 3px 0 var(--green),
       font-size: 39px;
       color: var(--green2);
       letter-spacing: .05em;
-      margin: 5px 0 5px; 
+      margin: 5px 0 5px;
     }
-
     .cardList{ display:grid; gap: 16px; }
     .miniCard{
-  border: 3px solid var(--green2);
-  border-radius: 16px;
-  background: var(--card-bg);
-  padding: 18px 20px;
-  transition: transform .16s ease, box-shadow .16s ease;
-  box-shadow:
-    0 4px 0 var(--green2),
-    0 8px 20px rgba(58,124,74,0.15);
-}
-
-.miniCard ul{
-  margin-top: 10px;
-  padding-left: 26px;
-}
-
-.miniCard li{
-  margin-bottom: 7px;
-  line-height: 1.5;
-}
-
-.miniCard .meta{
-  margin-top: 5px;
-  margin-bottom: 10px;
-  opacity: 0.8;
-  font-size: 21px;
-  font-style: italic;
-}
-
-.miniCard:hover{
-  transform: translateY(-3px);
-  box-shadow:
-    0 6px 0 var(--green2),
-    0 12px 28px rgba(58,124,74,0.25);
-}
-
+      border: 3px solid var(--green2);
+      border-radius: 16px;
+      background: var(--card-bg);
+      padding: 18px 20px;
+      transition: transform .16s ease, box-shadow .16s ease;
+      box-shadow: 0 4px 0 var(--green2), 0 8px 20px rgba(58,124,74,0.15);
+    }
+    .miniCard ul{
+      margin-top: 10px;
+      padding-left: 26px;
+    }
+    .miniCard li{
+      margin-bottom: 7px;
+      line-height: 1.5;
+    }
+    .miniCard .meta{
+      margin-top: 5px;
+      margin-bottom: 10px;
+      opacity: 0.8;
+      font-size: 21px;
+      font-style: italic;
+    }
+    .miniCard:hover{
+      transform: translateY(-3px);
+      box-shadow: 0 6px 0 var(--green2), 0 12px 28px rgba(58,124,74,0.25);
+    }
     .badge{
       display:inline-block;
       border:2px solid var(--ink);
@@ -287,11 +253,10 @@ box-shadow: 0 3px 0 var(--green),
       text-decoration: none;
       border-bottom: 2px dotted var(--ink);
     }
-a:hover{
-  color: var(--green2);
-  border-bottom-color: var(--green2);
-}
-
+    a:hover{
+      color: var(--green2);
+      border-bottom-color: var(--green2);
+    }
     .skills{
       display:flex;
       flex-wrap:wrap;
@@ -308,8 +273,8 @@ a:hover{
       font-size: 21px;
       transition: transform .16s ease, background .16s ease;
     }
-    .skill:hover{ 
-      transform: translateY(-4px); 
+    .skill:hover{
+      transform: translateY(-4px);
       background: var(--bg);
     }
     .skill.sandbox-mode{
@@ -345,7 +310,6 @@ a:hover{
     }
     .sandboxPlayBtn:active{ transform: translateY(2px); box-shadow: 0 2px 0 rgba(0,0,0,0.4), 0 0 15px rgba(53, 122, 75, 0.6); }
     .sandboxPlayBtn:hover{ filter: brightness(1.15); box-shadow: 0 4px 0 rgba(0,0,0,0.4), 0 0 25px rgba(53, 122, 75, 0.8); }
-
     .contactGrid{
       display:grid;
       gap: 12px;
@@ -365,15 +329,14 @@ a:hover{
       text-decoration:none;
       display:block;
     }
-    .contactCard:hover{ 
-      transform: translateY(-3px); 
+    .contactCard:hover{
+      transform: translateY(-3px);
       box-shadow: 0 7px 0 var(--ink), 0 14px 28px rgba(26,61,47,0.25);
     }
     .contactCard.soft{ background: var(--soft); }
     .contactCard.bg{ background: var(--card-bg); }
     .contactTitle{ font-size: 29px; letter-spacing:.08em; margin-bottom: 6px; font-weight: bold; }
     .contactText{ font-size: 21px; margin-top: 6px; text-decoration: underline dotted; }
-
     .footer{
       text-align:center;
       font-size: 25px;
@@ -382,15 +345,11 @@ a:hover{
       margin-top: 18px;
       padding-bottom: 10px;
     }
-    .heart {
-      color: #3a7c4a;
-    }
+    .heart { color: #3a7c4a; }
   </style>
 </head>
-
 <body>
   <div id="root"></div>
-
   <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -398,33 +357,25 @@ a:hover{
     const { useEffect, useMemo, useState } = React;
 
     function useActiveSection(ids){
-  const [active, setActive] = useState(ids[0]);
-
-  useEffect(() => {
-    const els = ids.map(id => document.getElementById(id)).filter(Boolean);
-    if(!els.length) return;
-
-    const io = new IntersectionObserver((entries) => {
-      const visible = entries.filter(e => e.isIntersecting);
-
-      if (!visible.length) return;
-
-      visible.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
-
-      const id = visible[0].target.id;
-      if (id) setActive(id);
-    }, {
-      threshold: 0.01,
-      rootMargin: "-120px 0px -60% 0px"
-    });
-
-    els.forEach(el => io.observe(el));
-    return () => io.disconnect();
-  }, [ids.join("|")]);
-
-  return active;
-}
-
+      const [active, setActive] = useState(ids[0]);
+      useEffect(() => {
+        const els = ids.map(id => document.getElementById(id)).filter(Boolean);
+        if(!els.length) return;
+        const io = new IntersectionObserver((entries) => {
+          const visible = entries.filter(e => e.isIntersecting);
+          if (!visible.length) return;
+          visible.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+          const id = visible[0].target.id;
+          if (id) setActive(id);
+        }, {
+          threshold: 0.01,
+          rootMargin: "-120px 0px -60% 0px"
+        });
+        els.forEach(el => io.observe(el));
+        return () => io.disconnect();
+      }, [ids.join("|")]);
+      return active;
+    }
 
     function Window({ id, icon, title, right, children }){
       return (
@@ -456,57 +407,33 @@ a:hover{
       const offsetRef = React.useRef({x: 0, y: 0});
       const lastPosRef = React.useRef({x: 0, y: 0, t: 0});
 
-      // Physics simulation
       useEffect(() => {
         if (!isSandbox) return;
-
         const interval = setInterval(() => {
           setSkillsState(prev => {
             const container = containerRef.current;
             if (!container) return prev;
-
             const SKILL_W = 140;
             const SKILL_H = 50;
             const containerHeight = container.clientHeight;
             const containerWidth = container.clientWidth;
             return prev.map(skill => {
               let {x, y, vx, vy, prevY} = skill;
-
-              // Apply gravity and friction
               vy += 0.3;
               vx *= 0.99;
               vy *= 0.99;
-
-              // Update position
               x += vx;
               y += vy;
-
               const skillRight = x + SKILL_W;
               const skillBottom = y + SKILL_H;
-
-              // Keep skills inside game territory
-              if (x < 0) {
-                x = 0;
-                vx *= -0.7;
-              }
-              if (skillRight > containerWidth) {
-                x = containerWidth - SKILL_W;
-                vx *= -0.7;
-              }
-              if (y < 0) {
-                y = 0;
-                vy *= -0.7;
-              }
-              if (skillBottom > containerHeight) {
-                y = containerHeight - SKILL_H;
-                vy *= -0.7;
-              }
-
+              if (x < 0) { x = 0; vx *= -0.7; }
+              if (skillRight > containerWidth) { x = containerWidth - SKILL_W; vx *= -0.7; }
+              if (y < 0) { y = 0; vy *= -0.7; }
+              if (skillBottom > containerHeight) { y = containerHeight - SKILL_H; vy *= -0.7; }
               return {...skill, x, y, vx, vy, prevY: y};
             });
           });
         }, 30);
-
         return () => clearInterval(interval);
       }, [isSandbox]);
 
@@ -517,51 +444,34 @@ a:hover{
         const rect = containerRef.current.getBoundingClientRect();
         const skill = skillsState.find(s => s.name === skillName);
         if (skill) {
-          offsetRef.current = {
-            x: e.clientX - rect.left - skill.x,
-            y: e.clientY - rect.top - skill.y
-          };
+          offsetRef.current = { x: e.clientX - rect.left - skill.x, y: e.clientY - rect.top - skill.y };
           lastPosRef.current = {x: skill.x, y: skill.y, t: performance.now()};
         }
       };
 
       const handleMouseMove = (e) => {
         if (!draggedRef.current || !containerRef.current) return;
-        
         const rect = containerRef.current.getBoundingClientRect();
         const newX = e.clientX - rect.left - offsetRef.current.x;
         const newY = e.clientY - rect.top - offsetRef.current.y;
-
         let clampedX = Math.max(0, Math.min(newX, rect.width - 140));
         let clampedY = Math.max(0, Math.min(newY, rect.height - 50));
-
         const now = performance.now();
         const last = lastPosRef.current;
         const dt = Math.max(16, now - last.t);
         lastPosRef.current = {x: clampedX, y: clampedY, t: now};
-
         setSkillsState(prev => prev.map(s =>
           s.name === draggedRef.current
-            ? {
-              ...s,
-              x: clampedX,
-              y: clampedY,
-              vx: (clampedX - last.x) / dt * 25,
-              vy: (clampedY - last.y) / dt * 25,
-              prevY: clampedY
-            }
+            ? { ...s, x: clampedX, y: clampedY, vx: (clampedX - last.x) / dt * 25, vy: (clampedY - last.y) / dt * 25, prevY: clampedY }
             : s
         ));
       };
 
-      const handleMouseUp = () => {
-        draggedRef.current = null;
-      };
+      const handleMouseUp = () => { draggedRef.current = null; };
 
       const toggleSandbox = () => {
         setIsSandbox(!isSandbox);
         if (!isSandbox) {
-          // Reset positions when entering sandbox - scattered and random
           setSkillsState(skills.map((s, i) => ({
             name: s,
             x: Math.random() * 400,
@@ -580,35 +490,16 @@ a:hover{
               <div><strong>Installed Programs</strong></div>
             </div>
             <div style={{display: 'flex', alignItems: 'center', gap: '12px'}}>
-              <button 
-                className="sandboxPlayBtn" 
-                onClick={toggleSandbox}
-                title={isSandbox ? 'Click to stop sandbox' : 'Click to activate sandbox'}
-              >
+              <button className="sandboxPlayBtn" onClick={toggleSandbox} title={isSandbox ? 'Click to stop sandbox' : 'Click to activate sandbox'}>
                 {isSandbox ? 'STOP' : 'PLAY'}
               </button>
             </div>
           </div>
           <div className="windowBody">
             {isSandbox ? (
-              <div 
-                className="skillsSandbox"
-                ref={containerRef}
-                onMouseMove={handleMouseMove}
-                onMouseUp={handleMouseUp}
-                onMouseLeave={handleMouseUp}
-              >
+              <div className="skillsSandbox" ref={containerRef} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp}>
                 {skillsState.map(skill => (
-                  <div
-                    key={skill.name}
-                    className="skill sandbox-mode"
-                    style={{
-                      left: `${skill.x}px`,
-                      top: `${skill.y}px`,
-                      whiteSpace: 'nowrap'
-                    }}
-                    onMouseDown={(e) => handleMouseDown(e, skill.name)}
-                  >
+                  <div key={skill.name} className="skill sandbox-mode" style={{ left: `${skill.x}px`, top: `${skill.y}px`, whiteSpace: 'nowrap' }} onMouseDown={(e) => handleMouseDown(e, skill.name)}>
                     {skill.name}
                   </div>
                 ))}
@@ -618,14 +509,19 @@ a:hover{
                 {skills.map(s => <div key={s} className="skill">{s}</div>)}
               </div>
             )}
-            
             <div style={{marginTop: 26, paddingTop: 20, borderTop: "3px solid var(--green2)"}}>
               <div style={{textAlign:"center", fontSize: 30, fontWeight:"bold", color:"var(--green2)", letterSpacing:".08em", marginBottom: 14}}>
                 Certifications
               </div>
               <ul style={{maxWidth: 700, margin:"0 auto", lineHeight: 1.5}}>
                 {certifications.map((cert, idx) => (
-                  <li key={idx} style={{marginBottom: 9}}>{cert}</li>
+                  <li key={idx} style={{marginBottom: 9}}>
+                    {cert.link ? (
+                      <a href={cert.link} target="_blank" rel="noopener noreferrer">{cert.name}</a>
+                    ) : (
+                      cert.name
+                    )}
+                  </li>
                 ))}
               </ul>
             </div>
@@ -653,17 +549,21 @@ a:hover{
       };
 
       const skills = [
-  "Python","C++","C#","JavaScript","HTML/CSS","SQL",
-  "React","Git & GitHub","Bootstrap","Power BI","Excel",
-  "UI/UX Design","Figma", "LaTeX",
-  "Digital Marketing","Adobe Creative Suite","Canva",
-   "Russian (conversational)"
-];
+        "Python","C++","C#","JavaScript","HTML/CSS","SQL",
+        "React","Git & GitHub","Bootstrap","Power BI","Excel",
+        "UI/UX Design","Figma","LaTeX",
+        "Digital Marketing","Adobe Creative Suite","Canva",
+        "Russian (conversational)"
+      ];
 
       const certifications = [
-        "Social Media Marketing Professional Certificate - Hootsuite",
-        "Design User Experiences with Figma - LinkedIn Learning",
-        "Psychology Fundamentals for Marketing & Sales - LinkedIn Learning"
+        {
+          name: "Google Analytics Certification - Google (Feb 2026)",
+          link: "https://skillshop.credential.net/ef8f5a0f-538f-4f69-ac14-38b9a477e0ce#acc.jkzMfpNU"
+        },
+        { name: "Social Media Marketing Professional Certificate - Hootsuite" },
+        { name: "Design User Experiences with Figma - LinkedIn Learning" },
+        { name: "Psychology Fundamentals for Marketing & Sales - LinkedIn Learning" }
       ];
 
       const experiences = [
@@ -766,10 +666,11 @@ a:hover{
       ];
 
       const involvement = [
-         { org: "Computing Student Union (CSU)", role: "Marketing Director", highlight: true },
-         { org: "Data Science & Informatics (DSI) Student Organization", role: "Member" },
-         { org: "UF Girls Who Code", role: "Member" }
-       ];
+        { org: "Computing Student Union (CSU)", role: "Marketing Director", highlight: true },
+        { org: "WiNGHacks", role: "Volunteer" },
+        { org: "Data Science & Informatics (DSI) Student Organization", role: "Member" },
+        { org: "UF Girls Who Code", role: "Member" }
+      ];
 
       return (
         <div className="page">
@@ -783,9 +684,8 @@ a:hover{
               <div className="name">ALICE KRUPITSKY</div>
             </div>
             <div className="headerBottom">
-              <div className="main-title">
-          Advertising Major + CS Minor </div>
-            <div className="main-title"> University of Florida </div>
+              <div className="main-title">Advertising Major + CS Minor</div>
+              <div className="main-title">University of Florida</div>
             </div>
           </div>
 
@@ -795,16 +695,11 @@ a:hover{
                 <div className="navTitle">NAV</div>
                 <div className="navGrid">
                   {sections.map(s => (
-                    <button
-                      key={s.id}
-                      className={"navBtn " + (active === s.id ? "active" : "")}
-                      onClick={() => scrollTo(s.id)}
-                    >
+                    <button key={s.id} className={"navBtn " + (active === s.id ? "active" : "")} onClick={() => scrollTo(s.id)}>
                       {s.icon} <strong>{s.label}</strong>
                     </button>
                   ))}
                 </div>
-
                 <div style={{
                   marginTop: 14,
                   borderRadius: 14,
@@ -816,13 +711,12 @@ a:hover{
                 }}>
                   <div style={{textAlign:"center", letterSpacing:".14em", marginBottom: 8, fontWeight: "bold"}}>Quick Links</div>
                   <div style={{marginTop: 6, display:"flex", flexWrap:"wrap", gap:8, justifyContent:"center"}}>
-  		    <a href="mailto:akrupitsky@ufl.edu">Email ↗</a>
-  		    <span style={{opacity:.6}}>·</span>
-   		    <a href="https://www.linkedin.com/in/alicekrupitsky" target="_blank" rel="noopener">LinkedIn ↗</a>
-       		    <span style={{opacity:.6}}>·</span>
-  		    <a href="https://github.com/alicekrupitsky" target="_blank" rel="noopener">GitHub ↗</a>
-		  </div>
-
+                    <a href="mailto:akrupitsky@ufl.edu">Email ↗</a>
+                    <span style={{opacity:.6}}>·</span>
+                    <a href="https://www.linkedin.com/in/alicekrupitsky" target="_blank" rel="noopener">LinkedIn ↗</a>
+                    <span style={{opacity:.6}}>·</span>
+                    <a href="https://github.com/alicekrupitsky" target="_blank" rel="noopener">GitHub ↗</a>
+                  </div>
                 </div>
               </div>
             </aside>
@@ -830,18 +724,10 @@ a:hover{
             <main style={{display:"grid", gap: 22}}>
               <Window id="about" title="About Me">
                 <div className="bigTitle">Welcome to my portfolio!</div>
-                <p>
-                  Hi, I'm Alice Krupitsky, a third-year student at the University of Florida studying Advertising with a minor in Computer Science and an AI Fundamentals Certificate. I'm instinctively drawn to creativity, while also deeply interested in the technology and data behind the scenes.
-                </p>
-                <p>
-                 I grew up in a Russian household in Tampa, which shaped my curiosity about culture, language, and communication. I’m fascinated by how different perspectives influence the way people interpret meaning, and I bring that awareness into how I think about audiences, messaging, and brand identity.
-               </p>
-               <p>
-                 Outside of work and school, I spend time learning languages, coding, writing, exploring fashion and visual design, and studying psychology. I’m drawn to disciplines that explain how people think, create, and connect.
-               </p>
-               <p>
-                 My long-term goal is to build a career that blends brand strategy, content creation, and emerging technology. My advertising philosophy centers on data-driven creativity: intuition sparks ideas, but meaningful communication is strongest when storytelling is supported by analytics and intentional strategy.
-                </p>
+                <p>Hi, I'm Alice Krupitsky, a third-year student at the University of Florida studying Advertising with a minor in Computer Science and an AI Fundamentals Certificate. I'm instinctively drawn to creativity, while also deeply interested in the technology and data behind the scenes.</p>
+                <p>I grew up in a Russian household in Tampa, which shaped my curiosity about culture, language, and communication. I'm fascinated by how different perspectives influence the way people interpret meaning, and I bring that awareness into how I think about audiences, messaging, and brand identity.</p>
+                <p>Outside of work and school, I spend time learning languages, coding, writing, exploring fashion and visual design, and studying psychology. I'm drawn to disciplines that explain how people think, create, and connect.</p>
+                <p>My long-term goal is to build a career that blends brand strategy, content creation, and emerging technology. My advertising philosophy centers on data-driven creativity: intuition sparks ideas, but meaningful communication is strongest when storytelling is supported by analytics and intentional strategy.</p>
               </Window>
 
               <Window id="experience" title="Experience">
@@ -862,95 +748,64 @@ a:hover{
               </Window>
 
               <Window id="projects" title="Projects">
-  <div className="cardList">
-    {projects.map((p, idx) => (
-      <div key={idx} className="miniCard">
-        <div style={{fontSize: 25, fontWeight: "bold", letterSpacing: ".04em"}}>
-          {p.link ? (
-            <a href={p.link} target="_blank" rel="noopener noreferrer">
-              {p.title} ↗
-            </a>
-          ) : (
-            p.title
-          )}
-        </div>
-
-        <div
-          className="meta"
-          style={{
-            display:"flex",
-            justifyContent:"space-between",
-            gap:"10px",
-            flexWrap:"wrap"
-          }}
-        >
-          <span>{p.meta}</span>
-
-          {p.link ? (
-            <a
-              href={p.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                border: "2px solid var(--ink)",
-                borderRadius: "10px",
-                padding: "3px 10px",
-                background: "var(--bg)",
-                boxShadow: "0 2px 0 var(--green2)",
-                textDecoration: "none",
-                whiteSpace: "nowrap",
-                fontSize: "19px"
-              }}
-            >
-              Visit Site ↗
-            </a>
-          ) : null}
-        </div>
-
-        <ul>
-          {p.bullets.map((b, i) => <li key={i}>{b}</li>)}
-        </ul>
-      </div>
-    ))}
-  </div>
-</Window>
+                <div className="cardList">
+                  {projects.map((p, idx) => (
+                    <div key={idx} className="miniCard">
+                      <div style={{fontSize: 25, fontWeight: "bold", letterSpacing: ".04em"}}>
+                        {p.link ? (
+                          <a href={p.link} target="_blank" rel="noopener noreferrer">{p.title} ↗</a>
+                        ) : p.title}
+                      </div>
+                      <div className="meta" style={{display:"flex", justifyContent:"space-between", gap:"10px", flexWrap:"wrap"}}>
+                        <span>{p.meta}</span>
+                        {p.link ? (
+                          <a href={p.link} target="_blank" rel="noopener noreferrer" style={{
+                            border: "2px solid var(--ink)", borderRadius: "10px", padding: "3px 10px",
+                            background: "var(--bg)", boxShadow: "0 2px 0 var(--green2)",
+                            textDecoration: "none", whiteSpace: "nowrap", fontSize: "19px"
+                          }}>Visit Site ↗</a>
+                        ) : null}
+                      </div>
+                      <ul>
+                        {p.bullets.map((b, i) => <li key={i}>{b}</li>)}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </Window>
 
               <SkillsWindow skills={skills} certifications={certifications} />
 
               <Window id="involvement" title="Campus Involvement">
-                 <ul style={{fontSize: 23, lineHeight: 1.5, paddingLeft: 26}}>
-                 {involvement.map((item, idx) => (
-                  <li key={idx} style={{marginBottom: 9}}>
-                    {item.org} —{" "}
-                    {item.highlight ? <strong>{item.role}</strong> : item.role}
-                  </li>
+                <ul style={{fontSize: 23, lineHeight: 1.5, paddingLeft: 26}}>
+                  {involvement.map((item, idx) => (
+                    <li key={idx} style={{marginBottom: 9}}>
+                      {item.org} — {item.highlight ? <strong>{item.role}</strong> : item.role}
+                    </li>
                   ))}
-                 </ul>
+                </ul>
               </Window>
 
               <Window id="contact" title="Connect.EXE">
                 <div className="bigTitle">Want to work together?<br/>Let's chat!</div>
-
                 <div className="contactGrid">
                   <a className="contactCard bg" href="mailto:akrupitsky@ufl.edu">
                     <div className="contactTitle">Email</div>
                     <div className="contactText">akrupitsky@ufl.edu</div>
                   </a>
-
                   <a className="contactCard bg" href="https://www.linkedin.com/in/alicekrupitsky" target="_blank" rel="noopener">
                     <div className="contactTitle">↗ LinkedIn</div>
                     <div className="contactText">linkedin.com/in/alicekrupitsky</div>
                   </a>
-
-		  <a className="contactCard bg" href="https://github.com/alicekrupitsky" target="_blank" rel="noopener" style={{ gridColumn: "span 2", justifySelf: "center", width: "100%", maxWidth: "420px" }}>
- 		  <div className="contactTitle">↗ GitHub</div>
- 		  <div className="contactText">github.com/alicekrupitsky</div>
-		 </a>
+                  <a className="contactCard bg" href="https://github.com/alicekrupitsky" target="_blank" rel="noopener" style={{ gridColumn: "span 2", justifySelf: "center", width: "100%", maxWidth: "420px" }}>
+                    <div className="contactTitle">↗ GitHub</div>
+                    <div className="contactText">github.com/alicekrupitsky</div>
+                  </a>
                 </div>
               </Window>
 
               <div className="footer">
-                  Made with <span className="heart">♥</span> by Alice
+                Made with <span className="heart">♥</span> by Alice
               </div>
             </main>
           </div>
