@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Home() {
+export default function InvolvementPage() {
   return (
     <div className="page">
       <div className="headerWindow">
@@ -24,9 +24,8 @@ export default function Home() {
         <aside className="navWrap">
           <div className="navCard">
             <div className="navTitle">NAV</div>
-
             <div className="navGrid">
-              <Link href="/" className="navBtn active">
+              <Link href="/" className="navBtn">
                 <strong>About</strong>
               </Link>
               <Link href="/experience" className="navBtn">
@@ -38,7 +37,7 @@ export default function Home() {
               <Link href="/skills" className="navBtn">
                 <strong>Skills</strong>
               </Link>
-              <Link href="/involvement" className="navBtn">
+              <Link href="/involvement" className="navBtn active">
                 <strong>Involvement</strong>
               </Link>
               <Link href="/contact" className="navBtn">
@@ -70,7 +69,6 @@ export default function Home() {
               >
                 Quick Links
               </div>
-
               <div
                 style={{
                   marginTop: "6px",
@@ -102,48 +100,32 @@ export default function Home() {
           </div>
         </aside>
 
-        <main style={{ display: "grid", gap: "22px" }}>
-          <section className="window">
+        <main style={{ display: "grid", gap: "22px", alignContent: "start" }}>
+          <section className="window" style={{ alignSelf: "start" }}>
             <div className="windowTop">
               <div className="windowTopLeft">
-                <strong>About Me</strong>
+                <strong>Campus Involvement</strong>
               </div>
             </div>
 
-            <div className="windowBody">
-              <div className="bigTitle">Welcome to my portfolio!</div>
-
-              <p>
-                Hi, I&apos;m Alice Krupitsky, a third-year student at the
-                University of Florida studying Advertising with a minor in
-                Computer Science and an AI Fundamentals Certificate. I&apos;m
-                instinctively drawn to creativity, while also deeply interested
-                in the technology and data behind the scenes.
-              </p>
-
-              <p>
-                I grew up in a Russian household in Tampa, which shaped my
-                curiosity about culture, language, and communication. I&apos;m
-                fascinated by how different perspectives influence the way
-                people interpret meaning, and I bring that awareness into how I
-                think about audiences, messaging, and brand identity.
-              </p>
-
-              <p>
-                Outside of work and school, I spend time learning languages,
-                coding, writing, exploring fashion and visual design, and
-                studying psychology. I&apos;m drawn to disciplines that explain
-                how people think, create, and connect.
-              </p>
-
-              <p>
-                My long-term goal is to build a career that blends brand
-                strategy, content creation, and emerging technology. My
-                advertising philosophy centers on data-driven creativity:
-                intuition sparks ideas, but meaningful communication is strongest
-                when storytelling is supported by analytics and intentional
-                strategy.
-              </p>
+            <div className="windowBody" style={{ padding: "16px 22px 18px" }}>
+              <ul
+                style={{
+                  fontSize: "21px",
+                  lineHeight: "1.35",
+                  paddingLeft: "24px",
+                  margin: 0,
+                }}
+              >
+                <li style={{ marginBottom: "9px" }}>
+                  Computing Student Union (CSU) — <strong>Marketing Director</strong>
+                </li>
+                <li style={{ marginBottom: "9px" }}>WiNGHacks — Volunteer</li>
+                <li style={{ marginBottom: "9px" }}>
+                  Data Science &amp; Informatics (DSI) Student Organization — Member
+                </li>
+                <li style={{ marginBottom: "9px" }}>UF Girls Who Code — Member</li>
+              </ul>
             </div>
           </section>
 
